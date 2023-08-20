@@ -21,7 +21,7 @@ blob = cv2.dnn.blobFromImage(image, 1, (224, 224), (104, 117, 123))
 
 # load our serialized model from disk
 print("[INFO] loading model...")
-net = cv2.dnn.readNetFromCaffe("VGG_ILSVRC_16_layers_deploy.prototxt", "VGG_ILSVRC_16_layers.caffemodel")
+net = cv2.dnn.readNetFromCaffe("bvlc_googlenet.prototxt", "bvlc_googlenet.caffemodel")
 
 
 # set the blob as input to the network and perform a forward-pass to
